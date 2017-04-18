@@ -8,6 +8,7 @@
 
 - [Jasmine](https://jasmine.github.io/)
 - [JQuery](https://jquery.com/)
+- [Jasmine-Jquery](https://github.com/velesin/jasmine-jquery)
 - [Handlebars](http://handlebarsjs.com/)
 - [Google Feed API](https://developers.google.com/feed/)
 
