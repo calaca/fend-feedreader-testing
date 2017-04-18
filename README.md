@@ -9,7 +9,7 @@
 - [Jasmine](https://jasmine.github.io/)
 - [JQuery](https://jquery.com/)
 - [Handlebars](http://handlebarsjs.com/)
-- [Google API loader](https://developers.google.com/loader/)
+- [Google Feed API](https://developers.google.com/feed/)
 
 ## Folders Structure
 
