@@ -6,11 +6,13 @@
 
 ## Stack
 
-- [Jasmine](https://jasmine.github.io/)
-- [JQuery](https://jquery.com/)
-- [Jasmine-Jquery](https://github.com/velesin/jasmine-jquery)
-- [Handlebars](http://handlebarsjs.com/)
-- [Google Feed API](https://developers.google.com/feed/)
+- Test Framework:
+    - [Jasmine](https://jasmine.github.io/)
+    - [jasmine-jquery](https://github.com/velesin/jasmine-jquery)
+- Libraries:
+    - [JQuery](https://jquery.com/)
+    - [Handlebars](http://handlebarsjs.com/)
+- API: [Google Feed](https://developers.google.com/feed/)
 
 ## Folders Structure
 
@@ -36,4 +38,18 @@
 - Open the `index.html` that is at root level.
 - Tests should be presented at the bottom of the page.
 
-<!-- TODO: ADD LIST OF TESTS HERE -->
+## Tests
+
+Tests that have been implemented:
+
+- RSS Feeds
+    - are defined
+    - should have a URL defined, it should not be empty
+    - should have a name defined, it should not be empty
+- The menu
+    - should be hidden by default
+    - should be displayed when clicked and hidden when clicked again
+- Initial Entries
+    - should have at least one entry displayed on the feed
+- New Feed Selection
+    - should change the content when a new feed is loaded
