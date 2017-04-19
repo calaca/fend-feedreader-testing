@@ -1,4 +1,4 @@
-# Neighborhood Map
+# Feed Reader Testing
 
 [![FEND nanodegree](https://img.shields.io/badge/udacity-FEND-02b3e4.svg?style=flat-square)](https://udacity.com/course/front-end-web-developer-nanodegree--nd001/)
 
