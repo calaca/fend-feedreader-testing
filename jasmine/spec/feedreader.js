@@ -79,10 +79,6 @@ $(function() {
     * @description New Feed Selection test suit
     */
     describe('New Feed Selection', function() {
-        /* DONE: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
-         */
         /**
         * @description Tests if the content changes changes when a new feed is selected.
         * Reloads default feed after the test is done.
