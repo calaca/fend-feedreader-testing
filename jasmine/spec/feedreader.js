@@ -17,7 +17,7 @@ $(function() {
         it('should have a URL defined, it should not be empty', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.url).toBeDefined();
-                expect(feed.url).not.toBe(0);
+                expect(feed.url.length).not.toBe(0);
             });
         });
 
@@ -27,7 +27,7 @@ $(function() {
         it('should have a name defined, it should not be empty', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.name).toBeDefined();
-                expect(feed.name).not.toBe(0);
+                expect(feed.name.length).not.toBe(0);
             });
         });
     });
@@ -68,9 +68,8 @@ $(function() {
                 done();
             });
         });
-        it('should have at least one entry displayed on the feed', function(done) {
+        it('should have at least one entry displayed on the feed', function() {
             expect($('.feed .entry').length).toBeGreaterThan(0);
-            done();
         });
     });
 
@@ -80,7 +79,7 @@ $(function() {
     */
     describe('New Feed Selection', function() {
         /**
-        * @description Tests if the content changes changes when a new feed is selected.
+        * @description Tests if the content changes when a new feed is selected.
         * Reloads default feed after the test is done.
         * @param {function} done - Callback function to be called when asynchronous request is finished
         */
@@ -96,12 +95,11 @@ $(function() {
         afterEach(function(done) {
             loadFeed(0, function() {
                 done();
-            })
+            });
         });
-        it('should change the content when a new feed is loaded', function(done) {
+        it('should change the content when a new feed is loaded', function() {
             var secondFeed = $('.feed').html();
             expect(firstFeed).not.toEqual(secondFeed);
-            done();
         });
     });
 }());
