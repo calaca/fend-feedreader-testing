@@ -28,6 +28,9 @@ $(function() {
             });
         });
 
+        /**
+        * @description Tests if each feed has a valid URL
+        */
         it('should have a valid URL', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.url).toMatch(/^(http|https):\/\//);
