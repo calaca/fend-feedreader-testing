@@ -58,7 +58,7 @@ $(function() {
     });
 
     /**
-    * @description Initial Entries test suit
+    * @description Initial Entries test suite
     */
     describe('Initial Entries', function() {
         /**
@@ -78,7 +78,7 @@ $(function() {
 
 
     /**
-    * @description New Feed Selection test suit
+    * @description New Feed Selection test suite
     */
     describe('New Feed Selection', function() {
         /**
