@@ -7,8 +7,7 @@ $(function() {
         * @description Tests if 'allFeeds' is defined and not empty
         */
         it('are defined', function() {
-            expect(allFeeds).toBeDefined();
-            expect(allFeeds.length).not.toBe(0);
+            expect(allFeeds).toBeTruthy();
         });
 
         /**
@@ -16,8 +15,7 @@ $(function() {
         */
         it('should have a URL defined, it should not be empty', function() {
             allFeeds.forEach(function(feed) {
-                expect(feed.url).toBeDefined();
-                expect(feed.url.length).not.toBe(0);
+                expect(feed.url).toBeTruthy();
             });
         });
 
@@ -26,8 +24,13 @@ $(function() {
         */
         it('should have a name defined, it should not be empty', function() {
             allFeeds.forEach(function(feed) {
-                expect(feed.name).toBeDefined();
-                expect(feed.name.length).not.toBe(0);
+                expect(feed.name).toBeTruthy();
+            });
+        });
+
+        it('should have a valid URL', function() {
+            allFeeds.forEach(function(feed) {
+                expect(feed.url).toMatch(/^(http|https):\/\//);
             });
         });
     });
